@@ -34,5 +34,5 @@ if [ -e $Directory_for ]; then #ディレクトリが存在するか確認
 else
   #存在しない場合
   mkdir $Directory_for
-  mv $FILE $Directory_for
+  mv "$FILE" $Directory_for
 fi
