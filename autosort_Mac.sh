@@ -25,6 +25,9 @@ elif [ $Youbi = "Sun" ]; then
   Youbi="日"
 fi
 Youbi_added=$Youbi$Addtext
+if [ $Youbi_added = "曜日" ]; then
+  Youbi_added="エラー"
+fi
 #移動先のディレクトリを指定
 Directory_addto="/path/to/add/to/"
 Directory_for=$Directory_addto$Youbi_added
